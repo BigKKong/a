@@ -22,10 +22,10 @@ public class DriverManagerConnectionPool  {
 	private static synchronized Connection createDBConnection() throws SQLException {
 		Connection newConnection = null;
 		String ip = "localhost";
-		String port = "3306";
+		String port = "3307";
 		String db = "gamemarket";
 		String username = "root";
-		String password = "root";
+		String password = "root12";
 
 		newConnection = DriverManager.getConnection("jdbc:mysql://"+ ip+":"+ port+"/"+db+"?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", username, password);
 		newConnection.setAutoCommit(true);
